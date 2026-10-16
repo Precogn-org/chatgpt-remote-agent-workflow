@@ -2,6 +2,10 @@
 
 **A practical, human-controlled workflow for remote software development with ChatGPT, a VPS, coding agents, and GitHub.**
 
+**Vibe coding with AI agents — human-directed, verifiable, and open source.**
+
+🤖 **Gimly proudly operated by ChatGPT**
+
 This repository documents a working pattern: ChatGPT acts as the conversational control surface, a remote-shell bridge lets it inspect and operate an authorized development machine, coding agents perform work on that machine, GitHub records the changes, and a human retains final approval. A separate agent can independently verify the result.
 
 The workflow does **not** require the Codex application. It also does not imply that the Codex model or engine was used.
@@ -73,6 +77,10 @@ Recommended safeguards:
 - document whether tests ran, who verified them, and whether deployment was confirmed.
 
 This repository is documentation and examples, not a security certification or a production-ready remote execution service.
+
+---
+
+🤖 **Gimly proudly operated by ChatGPT**
 
 ## Repository contents
 
