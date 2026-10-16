@@ -41,7 +41,7 @@ On 16 October 2026, this workflow was used on a real pull request in a private s
 - ChatGPT helped revise the PR description and coordinate the work through an authorized VPS connection.
 - The human owner reviewed and merged the PR.
 - A separate coordinator agent, V00, then checked the actual `main` branch and reported the merged commit and route-level changes.
-- The verification found two write endpoints guarded by a service key and an explicitly excluded demo-reset endpoint.
+- The verification confirmed the intended access-control change on the merged branch and an explicitly documented exclusion kept for a separate tracked issue.
 - The change included a test file with 21 tests reported as passing before merge. The independent post-merge verifier confirmed the file's presence but did not rerun those tests.
 - **The code had been merged but was not yet deployed when verified.** This case study therefore does not claim that the production service was already protected by the change.
 
