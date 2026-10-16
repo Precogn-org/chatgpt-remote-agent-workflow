@@ -43,7 +43,7 @@ On 16 October 2026, this workflow was used on a real pull request in a private s
 - A separate coordinator agent, V00, then checked the actual `main` branch and reported the merged commit and route-level changes.
 - The verification confirmed the intended access-control change on the merged branch and an explicitly documented exclusion kept for a separate tracked issue.
 - The change included a test file with 21 tests reported as passing before merge. The independent post-merge verifier confirmed the file's presence but did not rerun those tests.
-- **The code had been merged but was not yet deployed when verified.** This case study therefore does not claim that the production service was already protected by the change.
+- At the first post-merge check, the code was merged but had not yet been deployed. A subsequent operations-agent report recorded a service restart at 13:13:58 UTC and behavioral checks: requests without the key returned `401`, a request with the key but an invalid body returned `400`, and no errors were reported. This is a reported runtime check, not a claim that the independent verifier personally reran the checks.
 
 This is evidence of a practical human-in-the-loop workflow, not a claim that every task is autonomous, every result is correct, or the Codex engine was involved.
 
